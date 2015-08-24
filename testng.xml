@@ -18,7 +18,7 @@
   		</classes>
   	</test>
 
-  	<test name="Selenium Data-driven @DataProviders" enabled="false">
+  	<test name="Selenium Data-driven @DataProviders" enabled="true">
     	<classes>
      		<class name="datadriven.DataProvidersTests" />
    		</classes>
