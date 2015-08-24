@@ -36,7 +36,8 @@ public class DataProvidersTests {
 	 return new Object[][] {
 	   { "Selenium" },
 	   { "Testerzy.pl" },
-	   { "Wiadomości TVN" }
+	   { "Wiadomości TVN" },
+	   { "Webdriver" }
 	 };
 	}
 	
