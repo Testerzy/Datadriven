@@ -1,0 +1,46 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Data-Driven in WebDriver" verbose="3" parallel="tests" thread-count="3">
+    
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter" />
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+    </listeners>
+    
+  	<parameter name="url" value="http://google.pl" />
+  	<parameter name="seleniumHost" value="localhost" />
+  	<parameter name="seleniumPort" value="4444" />
+  	<parameter name="browser" value="firefox" />
+  	
+  	<test name="Selenium Data-driven @param=Selenium" enabled="false">
+  		<parameter name="phrase" value="szkolenia z Selenium" />
+  		<classes>
+  			<class name="datadriven.PrzykladParametry" />
+  		</classes>
+  	</test>
+
+  	<test name="Selenium Data-driven @DataProviders" enabled="false">
+    	<classes>
+     		<class name="datadriven.DataProvidersTests" />
+   		</classes>
+ 	</test>
+ 	
+ 	<test name="Selenium Data-driven @CSV File" enabled="false">
+ 		<classes>
+ 			<class name="datadriven.NewTest" />
+ 		</classes>
+ 	</test>
+ 	
+ 	<test name="Selenium Data-driven @Xls File" enabled="true">
+ 		<classes>
+ 			<class name="xls.file.NewTest" />
+ 		</classes>
+ 	</test>
+ 	
+ 	<test name="Selenium Data-driven @DataBase File" enabled="false">
+ 		<classes>
+ 			<class name="database.TestDatabase" />
+ 		</classes>
+ 	</test>
+ 	
+</suite>
+
