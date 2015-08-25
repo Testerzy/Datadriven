@@ -11,14 +11,14 @@
   	<parameter name="seleniumPort" value="4444" />
   	<parameter name="browser" value="firefox" />
   	
-  	<test name="Selenium Data-driven @param=Selenium" enabled="true">
+  	<test name="Selenium Data-driven @param=Selenium" enabled="false">
   		<parameter name="phrase" value="szkolenia z Selenium" />
   		<classes>
   			<class name="datadriven.PrzykladParametry" />
   		</classes>
   	</test>
 
-  	<test name="Selenium Data-driven @DataProviders" enabled="true">
+  	<test name="Selenium Data-driven @DataProviders" enabled="false">
     	<classes>
      		<class name="datadriven.DataProvidersTests" />
    		</classes>
