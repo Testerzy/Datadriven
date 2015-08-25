@@ -30,7 +30,7 @@
  		</classes>
  	</test>
  	
- 	<test name="Selenium Data-driven @Xls File" enabled="true">
+ 	<test name="Selenium Data-driven @Xls File" enabled="false">
  		<classes>
  			<class name="xls.file.NewTest" />
  		</classes>
