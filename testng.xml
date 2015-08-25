@@ -24,13 +24,13 @@
    		</classes>
  	</test>
  	
- 	<test name="Selenium Data-driven @CSV File" enabled="false">
+ 	<test name="Selenium Data-driven @CSV File" enabled="true">
  		<classes>
  			<class name="datadriven.NewTest" />
  		</classes>
  	</test>
  	
- 	<test name="Selenium Data-driven @Xls File" enabled="true">
+ 	<test name="Selenium Data-driven @Xls File" enabled="false">
  		<classes>
  			<class name="xls.file.NewTest" />
  		</classes>
