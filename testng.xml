@@ -1,10 +1,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Data-Driven in WebDriver" verbose="3" parallel="tests" thread-count="3">
     
-    <listeners>
+    <!-- <listeners>
         <listener class-name="org.uncommons.reportng.HTMLReporter" />
         <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
-    </listeners>
+    </listeners>-->
     
   	<parameter name="url" value="http://google.pl" />
   	<parameter name="seleniumHost" value="localhost" />
